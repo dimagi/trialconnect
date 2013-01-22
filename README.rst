@@ -58,15 +58,15 @@ for more information about couch.
 #. Clone the code from git, checkout the ``develop`` branch, and initialize
    git-flow::
 
-    git clone git@github.com:afrims/afrims.git
+    git clone git@github.com:dimagi/trialconnect.git
     cd afrims
     git checkout develop
     git flow init # just accept all the default answers
   
 #. Create a Python virtual environment for this project::
 
-    mkvirtualenv --distribute afrims-dev
-    workon afrims-dev
+    mkvirtualenv --distribute trialconnect-dev
+    workon trialconnect-dev
 
 #. Install the project dependencies into the virtual environment::
 
@@ -75,7 +75,7 @@ for more information about couch.
 #. Create local settings file and initialize a development database::
 
     cp localsettings.py.example localsettings.py
-    createdb afrims_devel
+    createdb trialconnect_devel
     ./manage.py syncdb
 
 #. Update the submodules::
